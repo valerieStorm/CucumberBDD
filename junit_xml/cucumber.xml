@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="18.596595">
-    <testcase classname="Free CRM Login Features" name="Free CRM Login test scenario" time="18.596595">
-        <failure message="java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)&#13;&#10;&#9;at StepDefinitions.LoginStepDefinitions.user_enters_username_and_password(LoginStepDefinitions.java:94)&#13;&#10;&#9;at ✽.Then user enters username and password(login.feature:43)&#13;&#10;">
-            <![CDATA[Given User is already in Login page.........................................passed
-When Title of page is Free CRM..............................................passed
-Then user enters username and password......................................failed
-And user clicks on login button.............................................skipped
-Then Close The Browser......................................................skipped
-
-StackTrace:
-java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
-	at StepDefinitions.LoginStepDefinitions.user_enters_username_and_password(LoginStepDefinitions.java:94)
-	at ✽.Then user enters username and password(login.feature:43)
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.141682">
+    <testcase classname="Test Tagged Hooks" name="This is First test" time="0.14085">
+        <system-out>
+            <![CDATA[Given this is the first step................................................passed
+When this is the second step................................................passed
+Then this is the third step.................................................passed
 ]]>
-        </failure>
+        </system-out>
+    </testcase>
+    <testcase classname="Test Tagged Hooks" name="This is Second test" time="0.000388">
+        <system-out>
+            <![CDATA[Given this is the first step................................................passed
+When this is the second step................................................passed
+Then this is the third step.................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Test Tagged Hooks" name="This is Third test" time="0.000444">
+        <system-out>
+            <![CDATA[Given this is the first step................................................passed
+When this is the second step................................................passed
+Then this is the third step.................................................passed
+]]>
+        </system-out>
     </testcase>
 </testsuite>

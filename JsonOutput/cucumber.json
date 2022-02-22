@@ -3,205 +3,394 @@
     "line": 1,
     "elements": [
       {
-        "comments": [
+        "before": [
           {
-            "line": 3,
-            "value": "#Without example Keyword --- Data driven approach without using Examples Key word - Scenario"
+            "result": {
+              "duration": 535894,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggeHookStepDefinition.setUP()"
+            }
           },
           {
-            "line": 5,
-            "value": "#Scenario: Free CRM Login test scenario"
+            "result": {
+              "duration": 78506,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggeHookStepDefinition.setUP1()"
+            }
           },
           {
-            "line": 6,
-            "value": "#Given User is already in Login page"
+            "result": {
+              "duration": 33564,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggeHookStepDefinition.beforeFirst()"
+            }
           },
           {
-            "line": 7,
-            "value": "#When Title of page is Free CRM"
-          },
-          {
-            "line": 8,
-            "value": "#Then user enters \"abcd\" and \"efgh\""
-          },
-          {
-            "line": 9,
-            "value": "#And user clicks on login button"
-          },
-          {
-            "line": 11,
-            "value": "# With examples Keyword  --- Data driven approach using Examples Key word - Scenario Outline"
-          },
-          {
-            "line": 13,
-            "value": "#Scenario Outline: Free CRM Login test scenario"
-          },
-          {
-            "line": 14,
-            "value": "#Given User is already in Login page"
-          },
-          {
-            "line": 15,
-            "value": "#When Title of page is Free CRM"
-          },
-          {
-            "line": 16,
-            "value": "#Then user enters \"\u003cusername\u003e\" and \"\u003cpassword\u003e\""
-          },
-          {
-            "line": 17,
-            "value": "#And user clicks on login button"
-          },
-          {
-            "line": 18,
-            "value": "#Then Close The Browser"
-          },
-          {
-            "line": 19,
-            "value": "#"
-          },
-          {
-            "line": 20,
-            "value": "#Examples:"
-          },
-          {
-            "line": 21,
-            "value": "#| username | password |"
-          },
-          {
-            "line": 22,
-            "value": "#| Hello    | pass1    |"
-          },
-          {
-            "line": 23,
-            "value": "#| Hi       | pass2    |"
-          },
-          {
-            "line": 27,
-            "value": "# Using data tables - raw method"
-          },
-          {
-            "line": 29,
-            "value": "#Scenario: Free CRM Login test scenario"
-          },
-          {
-            "line": 30,
-            "value": "#Given User is already in Login page"
-          },
-          {
-            "line": 31,
-            "value": "#When Title of page is Free CRM"
-          },
-          {
-            "line": 32,
-            "value": "#Then user enters username and password"
-          },
-          {
-            "line": 33,
-            "value": "#| Hello | hell |"
-          },
-          {
-            "line": 34,
-            "value": "#And user clicks on login button"
-          },
-          {
-            "line": 35,
-            "value": "#Then Close The Browser"
-          },
-          {
-            "line": 38,
-            "value": "# Using data tables- using Maps"
+            "result": {
+              "duration": 79076,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.setUP()"
+            }
           }
         ],
-        "line": 40,
-        "name": "Free CRM Login test scenario",
+        "line": 4,
+        "name": "This is First test",
         "description": "",
-        "id": "free-crm-login-features;free-crm-login-test-scenario",
+        "id": "test-tagged-hooks;this-is-first-test",
+        "after": [
+          {
+            "result": {
+              "duration": 39253,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggeHookStepDefinition.afterFirst()"
+            }
+          },
+          {
+            "result": {
+              "duration": 35840,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 35271,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggeHookStepDefinition.tearDown1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 34133,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggeHookStepDefinition.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 12328549925,
+              "duration": 139888680,
               "status": "passed"
             },
-            "line": 41,
-            "name": "User is already in Login page",
+            "line": 5,
+            "name": "this is the first step",
             "match": {
-              "location": "LoginStepDefinitions.user_already_on_login_page()"
+              "location": "TaggeHookStepDefinition.this_is_the_first_step()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 49709525,
+              "duration": 47786,
               "status": "passed"
             },
-            "line": 42,
-            "name": "Title of page is Free CRM",
+            "line": 6,
+            "name": "this is the second step",
             "match": {
-              "location": "LoginStepDefinitions.Title__of_page_is_Free_CRM()"
+              "location": "TaggeHookStepDefinition.this_is_the_second_step()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 6218335636,
-              "error_message": "java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence\r\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)\r\n\tat StepDefinitions.LoginStepDefinitions.user_enters_username_and_password(LoginStepDefinitions.java:94)\r\n\tat ✽.Then user enters username and password(login.feature:43)\r\n",
-              "status": "failed"
+              "duration": 41529,
+              "status": "passed"
             },
-            "line": 43,
-            "name": "user enters username and password",
+            "line": 7,
+            "name": "this is the third step",
             "match": {
-              "location": "LoginStepDefinitions.user_enters_username_and_password(DataTable)"
+              "location": "TaggeHookStepDefinition.this_is_the_third_step()"
             },
-            "rows": [
-              {
-                "cells": [
-                  "username",
-                  "pass"
-                ],
-                "line": 44
-              },
-              {
-                "cells": [
-                  "Hello",
-                  "hell"
-                ],
-                "line": 45
-              }
-            ],
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@First"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 46080,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggeHookStepDefinition.setUP()"
+            }
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 31858,
+              "status": "passed"
             },
-            "line": 46,
-            "name": "user clicks on login button",
             "match": {
-              "location": "LoginStepDefinitions.user_clicks_on_login_button()"
-            },
-            "keyword": "And "
+              "location": "TaggeHookStepDefinition.setUP1()"
+            }
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 31858,
+              "status": "passed"
             },
-            "line": 47,
-            "name": "Close The Browser",
             "match": {
-              "location": "LoginStepDefinitions.Close_The_Browser()"
+              "location": "TaggeHookStepDefinition.beforeSecond()"
+            }
+          },
+          {
+            "result": {
+              "duration": 44373,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.setUP()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "This is Second test",
+        "description": "",
+        "id": "test-tagged-hooks;this-is-second-test",
+        "after": [
+          {
+            "result": {
+              "duration": 39253,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggeHookStepDefinition.afterSecond()"
+            }
+          },
+          {
+            "result": {
+              "duration": 31289,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 34134,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggeHookStepDefinition.tearDown1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 27307,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggeHookStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 35271,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "this is the first step",
+            "match": {
+              "location": "TaggeHookStepDefinition.this_is_the_first_step()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 37547,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "this is the second step",
+            "match": {
+              "location": "TaggeHookStepDefinition.this_is_the_second_step()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 29013,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "this is the third step",
+            "match": {
+              "location": "TaggeHookStepDefinition.this_is_the_third_step()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@Second"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 47786,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggeHookStepDefinition.setUP()"
+            }
+          },
+          {
+            "result": {
+              "duration": 32427,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggeHookStepDefinition.setUP1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 43235,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggeHookStepDefinition.beforeThird()"
+            }
+          },
+          {
+            "result": {
+              "duration": 44943,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.setUP()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "This is Third test",
+        "description": "",
+        "id": "test-tagged-hooks;this-is-third-test",
+        "after": [
+          {
+            "result": {
+              "duration": 44942,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggeHookStepDefinition.afterThird()"
+            }
+          },
+          {
+            "result": {
+              "duration": 66560,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.tearDown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 39822,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggeHookStepDefinition.tearDown1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 25031,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TaggeHookStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 35271,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "this is the first step",
+            "match": {
+              "location": "TaggeHookStepDefinition.this_is_the_first_step()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 36409,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "this is the second step",
+            "match": {
+              "location": "TaggeHookStepDefinition.this_is_the_second_step()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27307,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "this is the third step",
+            "match": {
+              "location": "TaggeHookStepDefinition.this_is_the_third_step()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@Third"
           }
         ]
       }
     ],
-    "name": "Free CRM Login Features",
+    "name": "Test Tagged Hooks",
     "description": "",
-    "id": "free-crm-login-features",
+    "id": "test-tagged-hooks",
     "keyword": "Feature",
-    "uri": "login.feature"
+    "uri": "src/test/java/features/TaggedHook.feature"
   }
 ]
